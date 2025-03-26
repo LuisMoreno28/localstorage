@@ -1,0 +1,51 @@
+.img-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .image-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .image-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .image-info {
+    margin-top: 10px;
+  }
+  
+  .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+  }
+  
+  .no-images {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  
