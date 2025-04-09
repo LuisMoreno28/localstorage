@@ -1,0 +1,10 @@
+.footer-down{
+    border: 1px solid white;
+    text-align: center;
+    padding-top: 15px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-bottom: 1px;
+    background-color: antiquewhite;
+}

@@ -20,9 +20,7 @@ export class ImgService {
     return images;
   }
 
-  //funcion para agregar nueva imagen//
-  //@param name nombre de la imagen//
-  //@@param src ruta de la imagen//
+
 
   saveImage(name:string, src:string):void{
     let images = this.getImages();

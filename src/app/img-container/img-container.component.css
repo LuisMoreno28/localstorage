@@ -1,6 +1,7 @@
 .img-container {
     padding: 20px;
     text-align: center;
+    margin-left: 150px;
   }
   
   .image-list {
@@ -47,5 +48,17 @@
     font-style: italic;
     color: #555;
   }
-  
+  .show{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+.botones{
+  display: flex;
+  justify-content: space-around;
+}
   

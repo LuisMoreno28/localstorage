@@ -1,22 +1,31 @@
 <div class="img-container">
-  <h2>Imágenes</h2>
-  @if (images.length === 0) {
-  <div class="no-images">
-    <p>No hay imágenes para mostrar.</p>
-  </div>
-  }@else {
-  <div class="image-list">
-    @for (item of images; track item) {
-    <div class="image-item">
-      <img [src]="item.src" class="image-thumbnail" />
-      <div class="image-info">
-        <p>{{ item.name }}</p>
-        <button (click)="deleteImage(item.id_image)" class="delete-button">
-          Eliminar
-        </button>
+  <div class="row">
+    <div class="col-sm-9 mb-3 mb-sm-0">
+      <h2>Galeria de Imágenes</h2>
+      @if (images.length === 0) {
+      <div class="no-images">
+        <p>No hay imágenes para mostrar.</p>
       </div>
+      }@else {
+      <div class="image-list">
+        @for (item of images; track item) {
+        <div class="image-item">
+          <img [src]="item.src" class="image-thumbnail" />
+          <div class="image-info">
+            <p>{{ item.name }}</p>
+            <div class="botones">
+              <button class="show">
+                Ver
+              </button>
+            <button (click)="deleteImage(item.id_image)" class="delete-button">
+              Eliminar
+            </button>
+          </div>
+          </div>
+        </div>
+        }
+      </div>
+      }
     </div>
-    }
   </div>
-  }
 </div>

@@ -19,7 +19,8 @@ export class MainComponent {
   constructor(private imgService: ImgService){} // inyectar el uso del servicio
 
   ngOnInit():void{
-    this.imgArray = this.imgService.getImages(); 
+    // localStorage.clear()
+      this.imgArray = this.imgService.getImages(); 
     //obtener imagenes del servicio guardarlar en el arreglo imgArray
   }
 
